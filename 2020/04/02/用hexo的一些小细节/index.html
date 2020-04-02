@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="https://whereture.github.io">
   <title>使用hexo的一些小细节 | LZ‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。 1 #关于安装hexo admin的问题对于hexo admin的安装过程无论官网还是github以及百度个个论坛上面都有描述首先执行 $ npm install --save hexo-admin按理来说这一步是没有任何错误的，但是我遇到下面的这个情况，无轮是在Git ba">
+  <meta name="description" content="经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo的一些小细节">
 <meta property="og:url" content="https://whereture.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/index.html">
 <meta property="og:site_name" content="LZ‘Blog">
-<meta property="og:description" content="经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。 1 #关于安装hexo admin的问题对于hexo admin的安装过程无论官网还是github以及百度个个论坛上面都有描述首先执行 $ npm install --save hexo-admin按理来说这一步是没有任何错误的，但是我遇到下面的这个情况，无轮是在Git ba">
+<meta property="og:description" content="经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://whereture.github.io/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/npmwron.png">
 <meta property="og:image" content="https://whereture.github.io/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/1.png">
 <meta property="og:image" content="https://whereture.github.io/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/2.png">
 <meta property="og:image" content="https://whereture.github.io/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/3.png">
 <meta property="article:published_time" content="2020-04-02T03:24:37.000Z">
-<meta property="article:modified_time" content="2020-04-02T04:35:16.936Z">
+<meta property="article:modified_time" content="2020-04-02T04:48:44.523Z">
 <meta property="article:author" content="LZ‘Blog">
 <meta property="article:tag" content="hexo相关">
 <meta name="twitter:card" content="summary">
@@ -91,10 +91,8 @@
 		        
 			</div>
 		</nav>
-		<br>
-		<br>
 		<nav class="header-music">
-		<br><hr>
+		<hr>
 		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 		width="100%" height=86 src="//music.163.com/outchain/player?type=2&id=1327134942&auto=0&height=66"></iframe>
 		<hr>
@@ -176,7 +174,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。</p>
+        <p>经过这几天折腾hexo遇到的问题以及解决过程，我这里列举一些我发现的问题但是网上没有遇到过的，所以普通问题可以直接上百度。<a id="more"></a></p>
 <h1 id="1-关于安装hexo-admin的问题"><a href="#1-关于安装hexo-admin的问题" class="headerlink" title="1 #关于安装hexo admin的问题"></a>1 #关于安装hexo admin的问题</h1><p>对于hexo admin的安装过程无论官网还是github以及百度个个论坛上面都有描述<hr>首先执行<br> <code>$ npm install --save hexo-admin</code><br><br>按理来说这一步是没有任何错误的，但是我遇到下面的这个情况，无轮是在Git bash上面还是在cmd上面都会报同样的错误。<br><br><img src="/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/npmwron.png" alt><br>然后我就检查npm是否正常，结果是正常的，然后我就去hexo根目录下面的<strong>node_modules</strong>文件夹里面去寻找，结果真的发现了里面已经含有了一个<strong>hexo-admin</strong>文件夹，所以我不需要去另外安装可以直接使用，然后就直接<br><code>$ hexo s</code>再在你的本地<strong>localhost/admin</strong>就可以正常使用了。</p>
 <h1 id="2-关于配置完头像图片后一直裂开的问题"><a href="#2-关于配置完头像图片后一直裂开的问题" class="headerlink" title="2 #关于配置完头像图片后一直裂开的问题"></a>2 #关于配置完头像图片后一直裂开的问题</h1><p>关于hexo博客头像以及打赏功能下所需要使用的二维码等图片如何配置这里不多说，这里只说遇到的问题<br>……………..<br>（表示你已经配置完了图片头像等）<br><br>配置好了后你会发现所有的图片路径都对也是按照hexo yilia主题作者给的注释配置但是始终都会显示不出来，那么解决方法如下<br><br><code>浏览器F12调出控制台</code><br>结果如下!<br><br><img src="/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/1.png" alt><br><br><strong><em>不难发现这是报错404，也就是说我们的图片路径始终都没有给对，别着急继续往下看</em></strong><br><br><img src="/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/2.png" alt><br><br>这里的就可以看见结果了，我们把能正常显示的图片跟无法显示的图片一对比，果真是路径不对，这就要怪hexo在部署的时候会自动将本地给的<strong>localhost</strong>修改为<strong>localhost/username</strong>回过头来发现这个username正好是我的github仓库名，问题就迎刃而解了。<br><br>ok现在去主题配置文件里面把所有的路径加上这个仓库名，然后再日常三连<br><br><code>$ hexo clean</code><strong>清空</strong><br><br><code>$ hexo g</code>    <strong>部署</strong><br><br><code>$ hexo s</code>    <strong>预览</strong><br><br>一气呵成，终于处理好了。<br><br><img src="/.github.io/2020/04/02/%E7%94%A8hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%86%E8%8A%82/3.png" alt><br><br>最后不要忘记<code>$ hexo d</code>上传到github。</p>
 
@@ -419,6 +417,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hello</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hexo相关</a>
